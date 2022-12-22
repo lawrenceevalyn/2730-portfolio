@@ -4,7 +4,6 @@ body {
   	padding: 0;
 }
 
-
 .sidebar h1 {
   font-family: "Playfair Display", serif;
   font-size: 350%;
@@ -41,25 +40,6 @@ body {
 
 #colophon {
   padding-top: 20px;
-}
-
-#headshot {
-  padding: 16px;
-  padding-top: 25px;
-  display: inline-block;
-  margin-left: 0px;
-  float: right;
-}
-
-#headshot-pic {
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-div.blurb{
-  padding-top: 75px;
-  padding-left: 25px;
 }
 
 .content h1 {
@@ -109,10 +89,12 @@ div.blurb{
 
 /* LAYOUT STUFF */
 
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+/* Page content. The content margin-left must match the sidebar width */
 div.content {
-  margin-left: 350px;    /* <--- CHANGE US TGOGETHER*/
-  padding: 1px 16px;
+  margin-left: 350px;    /* <--- CHANGE US TOGETHER*/
+  padding-top: 75px;
+  padding-left: 25px;
+  padding-right: 16px;
   height: 1000px;
 }
 
@@ -178,24 +160,11 @@ div.content {
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
   
-  div.blurb{
+  div.content{
   padding-top: 30px;
   padding-left: 10px;
   padding-right: 10px;
   }
-}
-
-/* On screens that are less than 550px wide, center the headshot */
-@media screen and (max-width: 550px) {
-  #headshot {
-  width: 100%;
-  display: inline-block;
-  margin-left: auto;
-  margin-right:auto;
-  margin-top: 30px;
-  padding: 0;
-  float: right;
-}
 
 }
 
@@ -207,7 +176,7 @@ div.content {
     padding: 0px;
   }
   
-  div.blurb{
+  div.content{
   padding-top: 30px;
   padding-left: 10px;
   padding-right: 10px;
